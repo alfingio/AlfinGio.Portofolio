@@ -285,6 +285,42 @@ ul {
   background-attachment: fixed;
 }
 
+.tabs {
+  margin-top: 20px;
+}
+.tab-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #ddd;
+}
+.tab-links li {
+  margin: 0 5px;
+}
+.tab-links a {
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  background: #eee;
+  color: #333;
+  border-radius: 3px 3px 0 0;
+}
+.tab-links .active a {
+  background: #ccc;
+  color: #000;
+}
+.tab-content .tab {
+  display: none;
+}
+.tab-content .tab.active {
+  display: block;
+}
+.tab img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
 
 
 /*
