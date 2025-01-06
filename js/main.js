@@ -179,6 +179,19 @@
     this.initialize();
   }
 
+  $(document).ready(function () {
+    $('.tab-links a').on('click', function (e) {
+      e.preventDefault();
+      const currentAttrValue = $(this).attr('href');
+  
+      // Ganti tab aktif
+      $(this).parent('li').addClass('active').siblings().removeClass('active');
+  
+      // Tampilkan konten tab
+      $('.tab-content ' + currentAttrValue).addClass('active').siblings().removeClass('active');
+    });
+  });
+  
   /**
    * Default options for the carousel.
    * @public
